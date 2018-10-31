@@ -116,7 +116,7 @@ function addToInventory(){
             item_id: input.item_id
         }, function (err, data) {
             if(err) throw err;
-            console.log(data[0].stock_quantity);
+            //console.log(data[0].stock_quantity);
 
             if(data.length === 0){
                 console.log('Invalid Item_id');
@@ -124,8 +124,9 @@ function addToInventory(){
             } else {
                 connection.query("UPDATE products SET stock_quantity = " + (data[0].stock_quantity + input.quantity) + " WHERE item_id = " + input.item_id, function(err,resp){
                     if(err) throw err;
+                    let result = data[0].stock_quantity + input.item_id;
                     console.log("===========================================");
-                    console.log('Stock count for Item ID ' + input.item_id + " "+ data[0].product_name + ' has been updated to ' + data[0].stock_quantity + '.');
+                    console.log('Stock count for Item ID ' + input.item_id + " "+ data[0].product_name + ' has been updated to ' + result + '.');
                     console.log("===========================================");
 
 					// End the database connection
