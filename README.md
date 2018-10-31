@@ -11,4 +11,4 @@
 	-lets you update inventory.
 		![View product table](./images/viewProducts.png)
 		![Add to inventory](./images/addToInt.png)
-		![View low inventory](./images/viewLowInt.png)
+		![View low inventory](./images/ViewLowInt.png)
