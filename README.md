@@ -4,11 +4,11 @@
 
 #bamazonCustomer
 	-lets you buy products off of the list.
-![Customer Purchase](./images/customer1)
-![Customer Purchase](./images/customer2)
+		![Customer Purchase](./images/customer1.png)
+		![Customer Purchase](./images/customer2.png)
 
 #bamazonManager
 	-lets you update inventory.
-![View product table](./images/viewProducts)
-![Add to inventory](./images/addToInt)
-![View low inventory](./images/viewLowInt)
+		![View product table](./images/viewProducts.png)
+		![Add to inventory](./images/addToInt.png)
+		![View low inventory](./images/viewLowInt.png)
